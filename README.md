@@ -1,1 +1,4 @@
 # Rabbit-Swift
+
+## License
+MIT
