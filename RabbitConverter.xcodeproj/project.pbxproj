@@ -10,8 +10,9 @@
 		65355DBB1AE890F2008C3C9D /* RabbitConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 65355DBA1AE890F2008C3C9D /* RabbitConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65355DC11AE890F3008C3C9D /* RabbitConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65355DB51AE890F2008C3C9D /* RabbitConverter.framework */; };
 		65355DC81AE890F3008C3C9D /* RabbitConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65355DC71AE890F3008C3C9D /* RabbitConverterTests.swift */; };
-		65355DD31AE89105008C3C9D /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65355DD21AE89105008C3C9D /* Rabbit.swift */; };
-		65355DD41AE89105008C3C9D /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65355DD21AE89105008C3C9D /* Rabbit.swift */; };
+		65355E0E1AE89A46008C3C9D /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 65355E0D1AE89A46008C3C9D /* sample.json */; };
+		65355E101AE89EE2008C3C9D /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65355E0F1AE89EE2008C3C9D /* Rabbit.swift */; };
+		65355E111AE89EE2008C3C9D /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65355E0F1AE89EE2008C3C9D /* Rabbit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,8 @@
 		65355DC01AE890F3008C3C9D /* RabbitConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RabbitConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65355DC61AE890F3008C3C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65355DC71AE890F3008C3C9D /* RabbitConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabbitConverterTests.swift; sourceTree = "<group>"; };
-		65355DD21AE89105008C3C9D /* Rabbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rabbit.swift; sourceTree = "<group>"; };
+		65355E0D1AE89A46008C3C9D /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		65355E0F1AE89EE2008C3C9D /* Rabbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Classes/Rabbit.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		65355DC41AE890F3008C3C9D /* RabbitConverterTests */ = {
 			isa = PBXGroup;
 			children = (
+				65355E0D1AE89A46008C3C9D /* sample.json */,
 				65355DC71AE890F3008C3C9D /* RabbitConverterTests.swift */,
 				65355DC51AE890F3008C3C9D /* Supporting Files */,
 			);
@@ -109,7 +112,7 @@
 		65355DD11AE89105008C3C9D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				65355DD21AE89105008C3C9D /* Rabbit.swift */,
+				65355E0F1AE89EE2008C3C9D /* Rabbit.swift */,
 			);
 			name = Classes;
 			path = ../../Classes;
@@ -212,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65355E0E1AE89A46008C3C9D /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65355DD31AE89105008C3C9D /* Rabbit.swift in Sources */,
+				65355E101AE89EE2008C3C9D /* Rabbit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65355DC81AE890F3008C3C9D /* RabbitConverterTests.swift in Sources */,
-				65355DD41AE89105008C3C9D /* Rabbit.swift in Sources */,
+				65355E111AE89EE2008C3C9D /* Rabbit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +342,7 @@
 		65355DCC1AE890F3008C3C9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -347,12 +352,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		65355DCD1AE890F3008C3C9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -414,6 +421,7 @@
 				65355DCD1AE890F3008C3C9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65355DCE1AE890F3008C3C9D /* Build configuration list for PBXNativeTarget "RabbitConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +430,7 @@
 				65355DD01AE890F3008C3C9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
