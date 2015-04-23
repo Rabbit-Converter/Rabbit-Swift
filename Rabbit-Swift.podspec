@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Rabbit-Swift"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "Rabbit Converter"
   s.description      = <<-DESC
                        Another Unicode to Zawgyi , Zawgyi to Unicode Converter
