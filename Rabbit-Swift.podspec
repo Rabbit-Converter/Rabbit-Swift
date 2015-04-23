@@ -19,9 +19,8 @@ Pod::Spec.new do |s|
   s.author           = { "saturngod" => "saturngod@gmail.com" }
   s.source           = { :git => "https://github.com/Rabbit-Converter/Rabbit-Swift.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
-  s.requires_arc = true
+  s.ios.deployment_target = "8.0"
 
-  s.source_files = 'Classes/*.swift'
+  s.source_files = 'Classes/Rabbit.swift'
   
 end
