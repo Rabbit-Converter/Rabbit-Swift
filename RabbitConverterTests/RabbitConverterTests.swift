@@ -23,24 +23,24 @@ class RabbitConverterTests: XCTestCase {
     
     func testRabbit() {
         // This is an example of a functional test case.
-      if let bundlePath = NSBundle(forClass: self.classForCoder).pathForResource("sample", ofType: "json") {
+      if let bundlePath = Bundle(for: self.classForCoder).path(forResource: "sample", ofType: "json") {
       
-        let json = try? NSString(contentsOfFile: bundlePath, encoding: NSUTF8StringEncoding)
+        let json = try? NSString(contentsOfFile: bundlePath, encoding: String.Encoding.utf8.rawValue)
         
         XCTAssertNotNil(json, "JSON string not found")
         
         
-        if let data:NSData = json?.dataUsingEncoding(NSUTF8StringEncoding) {
+        if let data:Data = json?.data(using: String.Encoding.utf8.rawValue) {
           
-          let words:NSDictionary = (try! NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
+          let words:NSDictionary = (try! JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)) as! NSDictionary
           
           let zawgyi: NSArray = words["zg"] as! NSArray
           let uni: NSArray = words["uni"] as! NSArray
           
 
-          var i:Int
           
-          for i = 0; i < zawgyi.count ; i++ {
+          
+          for i in 0 ..< zawgyi.count {
             
             let unicode:String = uni[i] as! String
             let zawgyi:String = zawgyi[i] as! String

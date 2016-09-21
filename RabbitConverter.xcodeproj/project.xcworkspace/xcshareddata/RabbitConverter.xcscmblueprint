@@ -9,8 +9,8 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "01FE93F9-2067-4070-A1FF-85FBE290379C",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "0C291602151F158CAC9FCBA158DD251C9C0A6D3E" : "",
-    "90443EB4D426BF48596F3CE670F605BE5BB51734" : "Swift"
+    "0C291602151F158CAC9FCBA158DD251C9C0A6D3E" : "..",
+    "90443EB4D426BF48596F3CE670F605BE5BB51734" : "Swift\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "RabbitConverter",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
