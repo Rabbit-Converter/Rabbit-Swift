@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Rabbit-Converter/Rabbit-Swift"
   s.license          = 'MIT'
   s.author           = { "saturngod" => "saturngod@gmail.com" }
-  s.source           = { :git => "https://github.com/Rabbit-Converter/Rabbit-Swift.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Rabbit-Converter/Rabbit-Swift.git", :tag => "0.1.6" }
 
   s.ios.deployment_target = "8.0"
 
