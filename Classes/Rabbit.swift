@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 comquas. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public struct Rabbit {
     
