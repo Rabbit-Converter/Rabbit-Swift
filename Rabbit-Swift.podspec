@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Rabbit-Swift"
-  s.version          = "0.1.6"
+  s.version          = "0.1.7"
   s.summary          = "Rabbit Converter"
   s.description      = <<-DESC
                        Another Unicode to Zawgyi , Zawgyi to Unicode Converter
@@ -19,8 +19,8 @@ Pod::Spec.new do |s|
   s.author           = { "saturngod" => "saturngod@gmail.com" }
   s.source           = { :git => "https://github.com/Rabbit-Converter/Rabbit-Swift.git", :tag => s.version.to_s }
 
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "13.0"
 
-  s.source_files = 'Classes/Rabbit.swift'
+  s.source_files = 'Sources/Rabbit/Rabbit.swift'
   
 end
