@@ -18,6 +18,13 @@ let package = Package(
             name: "Rabbit"),
         .testTarget(
             name: "RabbitTests",
-            dependencies: ["Rabbit"]),
+            dependencies: ["Rabbit"],
+            resources: [
+                    // Copy Tests/ExampleTests/Resources directories as-is.
+                    // Use to retain directory structure.
+                    // Will be at top level in bundle.
+                    .copy("Resources/sample.json"),
+            ])
+       
     ]
 )
